@@ -29,7 +29,7 @@ export default Todo;
 function TodoHeader({ icon: Icon, title }) {
   return (
     <header className="flex items-center gap-2">
-      <div className="flex items-center text-4xl gap-2 font-semibold">
+      <div className="flex items-center text-3xl gap-2 font-semibold">
         <Icon weight="bold" className="relative top-0.5" />
         <span>{title}</span>
       </div>

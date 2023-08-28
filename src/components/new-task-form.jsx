@@ -15,7 +15,7 @@ function NewTaskForm() {
     >
       <input
         type="text"
-        className="peer py-3 ps-10 pe-2 flex-1 bg-gray-50 dark:bg-slate-950 bg-opacity-70 backdrop-blur-sm dark:bg-opacity-70 dark:backdrop-blur-sm placeholder:text-gray-800 dark:placeholder:text-gray-300 shadow-md rounded-sm focus:outline-none focus:bg-opacity-90 dark:focus:bg-opacity-90"
+        className="peer text-lg font-light py-3 ps-10 pe-2 flex-1 bg-gray-50 dark:bg-slate-950 bg-opacity-70 backdrop-blur-sm dark:bg-opacity-70 dark:backdrop-blur-sm placeholder:text-gray-800 dark:placeholder:text-gray-300 shadow-md rounded-sm focus:outline-none focus:bg-opacity-90 dark:focus:bg-opacity-90"
         placeholder="Add a task"
         size={1}
         {...register('task')}
