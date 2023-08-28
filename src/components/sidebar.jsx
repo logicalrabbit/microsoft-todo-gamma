@@ -33,7 +33,7 @@ function SidebarLink({ name, icon: Icon, link }) {
   );
 
   function navLinkStyles({ isActive }) {
-    return cn('flex gap-4 items-center px-2 py-1 text-foreground', {
+    return cn('flex gap-4 items-center px-2 py-3 text-foreground text-lg', {
       'border-l-4 border-l-blue-800 bg-muted': isActive,
       'border-l-4 border-l-transparent hover:bg-muted': !isActive,
     });
