@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .todo-theme-desk {
+    @apply text-white border-white bg-[url(https://images.unsplash.com/photo-1593062096033-9a26b09da705?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80)];
+  }
+  .todo-theme-desert {
+    @apply text-white border-white bg-[url(https://images.unsplash.com/photo-1692545052205-a3b9ac3f50d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2068&q=80)];
+  }
+  .todo-theme-night-sky {
+    @apply text-white border-white bg-[url(https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80)];
+  }
+  .todo-theme-library {
+    @apply text-white border-white bg-[url(https://images.unsplash.com/photo-1521920592574-49e0b121c964?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80)];
+  }
+  .todo-theme-forest {
+    @apply text-white border-white bg-[url(https://images.unsplash.com/photo-1476231682828-37e571bc172f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80)];
+  }
+  .todo-theme-rose {
+    @apply text-white border-white bg-rose-900 dark:bg-background dark:text-rose-500 dark:text-opacity-40;
+  }
+  .todo-theme-blue {
+    @apply text-white border-white bg-blue-900 dark:bg-background dark:text-blue-500 dark:text-opacity-40;
+  }
+  .todo-theme-lime {
+    @apply text-white border-white bg-lime-900 dark:bg-background dark:text-lime-500 dark:text-opacity-40;
+  }
+  .todo-theme-green {
+    @apply text-white border-white bg-green-900 dark:bg-background dark:text-green-500 dark:text-opacity-40;
+  }
+  .todo-theme-purple {
+    @apply text-white border-white bg-purple-900 dark:bg-background dark:text-purple-500 dark:text-opacity-40;
+  }
+  .todo-theme-rose-light {
+    @apply text-rose-700 border-rose-700 bg-rose-100 dark:bg-background dark:text-rose-300 dark:text-opacity-70;
+  }
+  .todo-theme-blue-light {
+    @apply text-blue-700 border-blue-700 bg-blue-100 dark:bg-background dark:text-blue-300 dark:text-opacity-70;
+  }
+  .todo-theme-lime-light {
+    @apply text-lime-700 border-lime-700 bg-lime-100 dark:bg-background dark:text-lime-300 dark:text-opacity-70;
+  }
+  .todo-theme-green-light {
+    @apply text-green-700 border-green-700 bg-green-100 dark:bg-background dark:text-green-300 dark:text-opacity-70;
+  }
+  .todo-theme-purple-light {
+    @apply text-purple-700 border-purple-700 bg-purple-100 dark:bg-background dark:text-purple-300 dark:text-opacity-70;
+  }
+}
