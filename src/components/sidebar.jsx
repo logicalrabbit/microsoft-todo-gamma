@@ -5,11 +5,11 @@ import Account from './account';
 import { AccountMenu } from './account-menu';
 
 const navigation = [
-  { name: 'My Day', icon: Sun, link: 'my-day' },
-  { name: 'Important', icon: Star, link: 'important' },
-  { name: 'Planned', icon: Article, link: 'planned' },
-  { name: 'Assigned to me', icon: User, link: 'assigned' },
-  { name: 'Tasks', icon: House, link: 'tasks' },
+  { name: 'My Day', icon: Sun, link: '/my-day' },
+  { name: 'Important', icon: Star, link: '/important' },
+  { name: 'Planned', icon: Article, link: '/planned' },
+  { name: 'Assigned to me', icon: User, link: '/assigned' },
+  { name: 'Tasks', icon: House, link: '/tasks' },
 ];
 
 function Sidebar() {
