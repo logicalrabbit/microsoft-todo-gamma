@@ -1,25 +1,31 @@
 import { NavLink } from 'react-router-dom';
 import { Sun, House, User, Star, Article } from '@phosphor-icons/react';
 import { cn } from '@/lib/utils';
+import Account from './account';
+import { AccountMenu } from './account-menu';
 
 const navigation = [
-  { name: 'My Day', icon: Sun, link: '/my-day' },
-  { name: 'Important', icon: Star, link: '/important' },
-  { name: 'Planned', icon: Article, link: '/planned' },
-  { name: 'Assigned to me', icon: User, link: '/assigned' },
-  { name: 'Tasks', icon: House, link: '/tasks' },
+  { name: 'My Day', icon: Sun, link: 'my-day' },
+  { name: 'Important', icon: Star, link: 'important' },
+  { name: 'Planned', icon: Article, link: 'planned' },
+  { name: 'Assigned to me', icon: User, link: 'assigned' },
+  { name: 'Tasks', icon: House, link: 'tasks' },
 ];
 
 function Sidebar() {
   return (
-    <div className='bg-background h-full'>
-      <ul className="p-2 flex flex-col gap-0.5">
+    <div className='bg-background h-full px-2 py-4 flex flex-col gap-6'>
+      <AccountMenu>
+        <Account />
+      </AccountMenu>
+      <ul className="flex flex-col gap-0.5">
         {navigation.map(({ name, ...rest }) => (
           <li key={name}>
             <SidebarLink name={name} {...rest} />
           </li>
         ))}
       </ul>
+      <div className='border-b border-b-foreground/30'></div>
     </div>
   );
 }

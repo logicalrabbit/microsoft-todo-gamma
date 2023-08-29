@@ -6,12 +6,14 @@ import {
 import { AppLayout } from '@/layouts/app-layout';
 import { MyDay, Important, Planned, Assigned, Tasks } from '@/pages';
 import { Navigate } from 'react-router-dom';
+import { Landing } from './pages/landing';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
+      <Route path="/" element={<Landing />} />
+
       <Route path="/" element={<AppLayout />}>
-        <Route index element={<Navigate to='/my-day' replace />} />
         <Route path="my-day" element={<MyDay />} />
         <Route path="important" element={<Important />} />
         <Route path="planned" element={<Planned />} />
