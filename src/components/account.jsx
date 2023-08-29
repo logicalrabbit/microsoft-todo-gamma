@@ -1,5 +1,6 @@
 import { useUser } from '@clerk/clerk-react';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { CaretUpDown } from '@phosphor-icons/react';
 
 function Account() {
   const { user } = useUser();
@@ -12,7 +13,7 @@ function Account() {
       </Avatar>
       <div>
         <p>{user.fullName}</p>
-        <p className='text-sm font-light'>{user.primaryEmailAddress.emailAddress}</p>
+        <p className='text-sm font-light flex items-center'>{user.primaryEmailAddress.emailAddress} <CaretUpDown className='mt-1' /></p>
       </div>
     </div>
   );

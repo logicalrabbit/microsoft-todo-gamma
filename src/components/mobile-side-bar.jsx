@@ -9,7 +9,7 @@ import { Sidebar } from './sidebar';
 function MobileSidebar() {
   return (
     <Sheet>
-      <SheetTrigger className="md:hidden">
+      <SheetTrigger className="md:hidden mb-3">
         <List size={26} className='text-inherit' />
       </SheetTrigger>
       <SheetContent className='w-80 p-0' side='left'>
