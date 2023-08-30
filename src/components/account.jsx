@@ -13,7 +13,7 @@ function Account() {
       </Avatar>
       <div>
         <p>{user.fullName}</p>
-        <p className='text-sm font-light flex items-center'>{user.primaryEmailAddress.emailAddress} <CaretUpDown className='mt-1' /></p>
+        <p className='text-sm font-light flex items-center'>{user.primaryEmailAddress.emailAddress} <CaretUpDown className='lg:mt-1' /></p>
       </div>
     </div>
   );
