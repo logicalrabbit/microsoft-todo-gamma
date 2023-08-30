@@ -3,6 +3,7 @@ import {
   SignInButton,
   SignUpButton,
   SignedIn,
+  SignedOut,
   useAuth,
 } from '@clerk/clerk-react';
 import { Navigate } from 'react-router-dom';
@@ -27,7 +28,7 @@ function Landing() {
   );
 }
 
-// add auth logic
+// wrap <Landing> with auth logic
 function _Landing() {
   const { isLoaded } = useAuth();
 
@@ -38,7 +39,9 @@ function _Landing() {
       <SignedIn>
         <Navigate to="my-day" />
       </SignedIn>
-      <Landing />
+      <SignedOut>
+        <Landing />
+      </SignedOut>
     </>
   );
 }
