@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils';
 import { ModeToggle } from '@/components/mode-toggle';
 import { NewTaskForm } from '@/components/new-task-form';
 import { MobileSidebar } from './mobile-side-bar';
+import { TaskList } from './task-list';
 
 function Todo({ title, icon }) {
   const { todoTheme } = useTodoTheme();
@@ -18,13 +19,15 @@ function Todo({ title, icon }) {
       <MobileSidebar />
       <TodoHeader title={title} icon={icon} />
       <div className="flex-1 flex flex-col min-h-0">
-        <div className="flex-1 overflow-y-auto text-foreground"></div>
+        <div className="flex-1 overflow-y-auto text-foreground">
+          <TaskList />
+        </div>
         <NewTaskForm />
       </div>
     </div>
   );
 }
-export default Todo;
+export { Todo };
 
 function TodoHeader({ icon: Icon, title }) {
   return (

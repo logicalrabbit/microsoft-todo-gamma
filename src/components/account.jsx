@@ -18,4 +18,4 @@ function Account() {
     </div>
   );
 }
-export default Account;
+export {Account};

@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import { Sun, House, User, Star, Article } from '@phosphor-icons/react';
 import { cn } from '@/lib/utils';
-import Account from './account';
+import {Account} from './account';
 import { AccountMenu } from './account-menu';
 
 const navigation = [
